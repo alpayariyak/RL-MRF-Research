@@ -3,10 +3,10 @@ from canvas_properties import *
 from assets import *
 from random import choice, randint, random
 
+belts = {1: {'y': 185, 'speed': 300, 'miss_probability': 0.04},
+         2: {'y': 385, 'speed': 200, 'miss_probability': 0.08},
+         3: {'y': 585, 'speed': 400, 'miss_probability': 0.04}}
 
-belts = {1: {'y': 185, 'speed': 300, 'miss_probability':0.04},
-         2: {'y': 385, 'speed': 200, 'miss_probability':0.08},
-         3: {'y': 585, 'speed': 400, 'miss_probability':0.04}}
 
 class Simulator_Object:
 
@@ -42,7 +42,6 @@ class Simulator_Object:
 class Belt(Simulator_Object):
     def __init__(self, belt_number, timestep_size, x=-50, speedx=0, speedy=0, rot=0, width=CANVAS_WIDTH + 150,
                  height=160):
-
         self.obj_name = 'ConvBeltNew'
         self.y = belts[belt_number]['y']
         self.belt_speed = belts[belt_number]['speed'] * timestep_size

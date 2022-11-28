@@ -1,5 +1,6 @@
 def enumerate_cells(cells):
     """
+    Enumerate the cells in the grid
     :param cells: The cells we want to use on all belts. To
     :return:
     """
@@ -9,5 +10,3 @@ def enumerate_cells(cells):
             cell_list.append([r, c])
     cells_dictionary = {cell_n: cell_list[cell_n] for cell_n in range(len(cell_list))}
     return cells_dictionary
-
-enumerate_cells((12, 14, 17, 19, 21))
