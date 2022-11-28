@@ -1,2 +1,2 @@
 # RL-MRF-Research
- Rebuilt MRF-RL and implementing DQN
+Refactoring my research from this summer to an OpenAI Gym Environment style wrapper with better documentation, comments and overall code clarity. 
